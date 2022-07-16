@@ -1,0 +1,34 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env", {
+        "modules": false,
+        "loose": false,
+        "useBuiltIns": "usage"
+      }
+    ],
+    [
+      "@babel/preset-stage-2", {
+        "modules": false,
+        "loose": false,
+        "useBuiltIns": true,
+        "decoratorsLegacy": true
+      }
+    ]
+  ],
+  "plugins": [
+    [
+      "@babel/transform-runtime", {
+        "polyfill": false,
+        "regenerator": false
+      }
+    ],
+    [
+      "@babel/plugin-proposal-object-rest-spread", { 
+        "loose": true, 
+        "useBuiltIns": true 
+      }
+    ]
+  ],
+  "comments": false
+}

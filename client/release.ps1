@@ -1,0 +1,1 @@
+Invoke-Command {quasar build -m cordova -T android; cd src-cordova; cordova build android --release -- --keystore="../wheretobuy-release.jks" --alias=wheretobuy; cd.. }
